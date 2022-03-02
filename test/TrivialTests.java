@@ -18,4 +18,10 @@ public class TrivialTests {
         boolean esJugable = trivial.esJugable();
         Assertions.assertTrue(esJugable);
     }
+    @Test
+    public void maximo_seis_jugadores_para_jugar() {
+        Game trivial = new Game();
+        boolean esJugable = trivial.esJugable();
+        Assertions.assertTrue(esJugable);
+    }
 }

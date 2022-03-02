@@ -15,11 +15,14 @@ public class GameLauncher {
         juego.agregar("Maria");
         juego.agregar("Juan");
         juego.agregar("Antonio");
+        juego.agregar("Jaime");
+        juego.agregar("Lucia");
+        juego.agregar("Sofía");
 
         Random rand = new Random();
         boolean esJujable = juego.esJugable();
         if (!esJujable){
-            System.out.println("Debe haber al menos dos jugadores");
+            System.out.println("Debe haber al menos dos jugadores y como máximo seis");
         }
 
         do {
