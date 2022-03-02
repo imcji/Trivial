@@ -12,4 +12,10 @@ public class TrivialTests {
     public void crear_Game(){
         Game trivial = new Game();
     }
+    @Test
+    public void minimo_dos_jugadores_para_jugar() {
+        Game trivial = new Game();
+        boolean esJugable = trivial.esJugable();
+        Assertions.assertTrue(esJugable);
+    }
 }

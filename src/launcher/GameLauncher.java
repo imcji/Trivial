@@ -17,6 +17,10 @@ public class GameLauncher {
         juego.agregar("Antonio");
 
         Random rand = new Random();
+        boolean esJujable = juego.esJugable();
+        if (!esJujable){
+            System.out.println("Debe haber al menos dos jugadores");
+        }
 
         do {
 
